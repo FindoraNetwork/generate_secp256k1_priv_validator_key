@@ -1,0 +1,15 @@
+[package]
+name = "generate_secp256k1_priv_validator_key"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies] 
+base64 = "0.21"
+secp256k1 = { version = "0.27", features = ["recovery", "rand-std"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+ethereum-types = "0.14.0"
+sha3 = "0.10"
+hex = "0.4"
